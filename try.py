@@ -5,6 +5,7 @@ import tkinter as tk
 import os
 from PIL import Image, ImageTk
 
+# send the request
 def send_request():
     r = re.post(url, headers = header, data=datas)
     soup = BeautifulSoup(r.content, 'html.parser')
